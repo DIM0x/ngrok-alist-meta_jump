@@ -7,7 +7,7 @@
             // 在iframe中找到id为visit-button的按钮元素并模拟点击
             var iframe = document.getElementById("my-iframe");
             var innerDocument = iframe.contentWindow.document;
-            var button = document.querySelector("#root > div > main > div > div > section.border-gray.mb-4.border.bg-white.drop-shadow-md > div > footer > button");
+            var button = document.querySelector("button");
             button.click();
         }
 
