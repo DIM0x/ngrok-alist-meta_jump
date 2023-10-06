@@ -3,19 +3,5 @@
 <head>
 <meta charset="utf-8">
 <title>正在跳转</title>
+<meta http-equiv="refresh" content="0;url=https://physically-sought-monkey.ngrok-free.app/">
 </head>
-<body>
-<script>
-    // 跳转到ngrok
-	var url = "https://physically-sought-monkey.ngrok-free.app/";
-
-    // 获取当前页面的 Header
-    var headers = new Headers();
-    headers.append("ngrok-skip-browser-warning", "value");
-
-    // 根据指定的 URL 和 Header 进行页面跳转
-    location.href = new Request(url, {
-        headers: headers
-    });
-</script>
-</body>
