@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>欢迎访问 Sailfish | Alist</title>
+<title>正在检测是否支持IPv6</title>
 </head>
 <body>
 <script>
@@ -47,18 +47,13 @@ function testIPv6Support() {
             ipv6Flag = true;
             console.log("当前网络支持IPv6");
 			document.getElementById("v6").innerText = "当前网络支持IPv6";
+			window.location.href = "ipv6/";
         } else {
             console.log("当前网络不支持IPv6");
 			document.getElementById("v6").innerText = "当前网络不支持IPv6";
+			window.location.href = "ngrok/";
         }
     });
 </script>
-<p>IPv6检测结果：<span id="v6"></span></p>
-<p>选择下面任意一个按钮访问：</p>
-<a href="ngrok/">
-<button style="width: 33%;height: 130px;color: #ffffff; background-color: #1853db;border-color: #1853db;"><h1>地址1</h1></button></a>
-<a href="loophole/">
-<button style="width: 33%;height: 130px;color: #ffffff; background-color: rgb(68,62,148);border-color: #1853db;"><h1>地址2</h1></button></a>
-<a href="cpolar/">
-<button style="width: 33%;height: 130px;color: #ffffff; background-color: rgb(255,112,82);border-color: #1853db;"><h1>地址3</h1></button></a>
+<p>检测结果：<span id="v6"></span></p>
 </body>
